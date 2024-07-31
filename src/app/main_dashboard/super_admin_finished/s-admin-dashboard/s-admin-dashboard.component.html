@@ -1,0 +1,19 @@
+
+<body>
+    <div class="container-fluid">
+        <div class="row top_bar w-100">
+            <div class="col-12 header m-0">
+                <app-sup-top-bar></app-sup-top-bar>
+            </div>
+        </div>
+        <div class="row">
+            <div class="w-auto sidebar p-0 m-0 mycol">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="col fit main" overflow-scroll >
+                <router-outlet name='mainbar'></router-outlet>
+            </div>
+        </div>
+    </div>
+</body>
+

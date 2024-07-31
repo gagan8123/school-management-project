@@ -1,0 +1,68 @@
+
+<!-- <div class="body">
+  <div class="wrapper">
+    <form action>
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" placeholder="User ID" required [(ngModel)]="name"
+          name="name">
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required [(ngModel)]="email" name="email">
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="row justify-content-center form-check-inline">
+
+        <div class="w-auto m-2 ">
+          <input type="radio" name="user" class="form-check-input" value="admin" [(ngModel)]="user">
+          <label class="form-check-label" for="Admin">Admin</label></div>
+
+        <div class="w-auto m-2">
+          <input type="radio" name="user" class="form-check-input" value="super_admin" [(ngModel)]="user">
+          <label class="form-check-label" for="Super_admin">Super Admin</label>
+        </div>
+      </div>
+      <br>
+      <button type="submit" (click)="onSubmit()" class="btn1">Login</button>
+
+    </form>
+  </div>
+</div> -->
+
+
+<body>
+  <div class="login-container p-lg-4 radi bor">
+    <div class="login-header ">
+      <img src="data:image/jpeg;base64,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" alt="">
+      <h1><strong>Login</strong></h1>
+    </div>
+    <form >
+      <div class="form-group ">
+        <label for="userId"><b>User ID</b></label>
+        <input type="text"name = "userId" class="form-control" id="userId" [(ngModel)]="userId" placeholder="Enter your user ID">
+      </div>
+      <div class="form-group">
+        <label for="password"><b>Password</b></label>
+        <input type="password" name = "password" class="form-control" id="password" [(ngModel)]="password" placeholder="Enter your password">
+      </div>
+      <div class="form-group">
+        <b>Role</b>
+        <div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="superAdmin" name="role" class="custom-control-input" value="super_admin" [(ngModel)]="user">
+            <label class="custom-control-label" for="superAdmin"><b>Super Admin</b></label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="admin" name="role" class="custom-control-input" value="admin" [(ngModel)]="user">
+            <label class="custom-control-label" for="admin"><b>Admin</b></label>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block radi"(click)="onSubmit()">Login</button>
+    </form>
+  </div>
+<button hidden class="btn btn primary" (click)="logout()">logout</button>
+
+</body>
+

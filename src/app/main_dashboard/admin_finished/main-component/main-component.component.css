@@ -1,0 +1,34 @@
+.header {
+    font-weight: bolder;
+    color:#dee2e6;
+    /* background-color: #646465; */
+    background: #042331;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-bottom: 1px solid #dee2e6;
+}
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+    z-index: 3;
+
+}
+.main {
+    padding: 20px;
+    margin-top: 90px;
+    z-index: 1;
+}
+.mycol{
+    background: #042331;
+}
+.fit{
+    width:100%;
+    overflow-x: scroll;
+
+}
+.top_bar{
+    position: fixed;
+    z-index: 2;
+}

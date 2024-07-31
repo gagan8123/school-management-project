@@ -1,0 +1,57 @@
+<!-- <div class="flex justify-content-center">
+    <h2 class="text-center mb-4">Student Class Edit Form</h2>
+    <div class = "">
+        <form class="flex justify-content-center ">
+            <div class="col-8 ml-lg-5">
+                
+            </div>
+        </form>
+    </div>
+</div> -->
+
+<div class="container mt-2">
+    <div class="card ">
+        <div class="card-header bg-info">
+            <h1 class="text-center font-weight-bolder">{{title}}</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group" [hidden]="hidden">
+                <label for="studentClass" [(ngModel)]="bioid" >Student Id</label>
+                <select name="id" (change)="onchange()" id="studentClass" class="form-control" [(ngModel)]="id" [selectedIndex]="0">
+                    <option *ngFor="let id of student" value="{{id[0]}}">{{id[0]}}</option>
+
+                </select>
+            </div>
+            
+            <div class="form-group" [hidden]="!hidden">
+                <label for="studentClass" readonly>Student Id</label>
+                <input type="text" name="id" class="form-control"  [(ngModel)]="bioid" readonly id="studentClass" placeholder="Enter class">
+            </div>
+            <div class="form-group">
+                <label for="studentClass">Name</label>
+                <input type="text" name="name" class="form-control"  [(ngModel)]="name" readonly id="studentClass" placeholder="Enter class">
+            </div>
+            <div class="form-group"[hidden]="!hidden">
+                <label for="studentClass" >Roll number</label>
+                <input type="text" name="roll" class="form-control" [(ngModel)]="rollnumber"  id="studentClass" placeholder="Enter class">
+            </div>
+            <div class="form-group"[hidden]="hidden">
+                <label for="studentClass" >Roll number</label>
+                <input type="text" name="roll" class="form-control" [(ngModel)]="rollnumber"  id="studentClass" placeholder="Enter class">
+            </div>
+            <div class="form-group">
+                <label for="studentClass">Class</label>
+                <input type="text" name="class" class="form-control"  [(ngModel)]="class_" id="studentClass" placeholder="Enter class">
+            </div>
+            <div class="form-group">
+                <label for="studentSection">Section</label>
+                <input type="text" name="section" class="form-control"  [(ngModel)]="section" id="studentSection" placeholder="Enter section">
+            </div>
+            <div class="form-group">
+                <label for="studentBatch">Batch</label>
+                <input type="text" name="batch" class="form-control" readonly [(ngModel)]="edit_batch" id="studentBatch" placeholder="Enter batch">
+            </div>
+            <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+        </div>
+    </div>
+</div>

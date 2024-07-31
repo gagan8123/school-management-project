@@ -1,0 +1,82 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h1
+        class="text-center mb-4 font-weight-bolder text-lg-center ">Student
+        Class Info</h1>
+      <br>
+      <div class="row text-lg-left font-weight-bold">
+        <div class="col">Class : {{classs}}</div>
+        <div class="col">Batch : 
+          <select name="" id="" class="form-control col font-weight-bold" (change)="fetc()" [(ngModel)]="batchid">
+            <option value="{{item.batchId}}" *ngFor="let item of batch">{{item.batch}}</option>
+          </select>
+          
+          </div>
+      </div><br>
+      <div class="row justify-content-between">
+        <div class="col">
+
+          <div class="form-group col-md-6">
+            <label for="searchBy">Search By</label>
+            <select class="form-control" id="searchBy" [(ngModel)]="colum">
+                <option  value="0" >Std ID</option>
+                <option value="1">Name</option>
+                <option value="3">Register Number</option>
+                <option value="2">class</option>
+                <option value="4">section</option>
+                
+                
+            </select>
+        </div>
+          
+          <input
+            type="text"
+            [(ngModel)]="searchTerm"
+            class="form-control search-box col-md-6"
+            placeholder="Search "
+            (keyup)="filterTable()" /></div>
+
+        <div class="col justify-content-end pt-2"><a  href="/dashboard/super_admin/(student//mainbar:editclass)"><button
+          class="btn btn-primary btn-md">add class for {{nonclass_count}}
+          students</button></a></div>
+      </div>
+
+      <table class="table table-bordered">
+        <thead class="thead-light">
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Roll number</th>
+            <th>Class</th>
+            
+            <th>Section</th>
+            <!-- <th>Batch</th> -->
+            <th>Actions</th>
+            <th>View marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of filteredStudents">
+            <td>{{student[0]}}</td>
+            <td>{{student[1]}}</td>
+            <td>{{student[3]}}</td>
+            <td>{{student[2]}}</td>
+            
+            <td>{{student[4]}}</td>
+            <!-- <td>{{student[5]}}</td> -->
+
+            <td>
+             <a  href="/dashboard/super_admin/(student//mainbar:editclass;0={{student[0]}};1={{student[1]}};2={{student[3]}};3={{student[2]}};4={{student[4]}};5={{student[5]}};)"> <button class="btn btn-primary btn-sm mr-2">Edit</button></a>
+              <button class="btn btn-danger btn-sm" (click)="delete(student[5])">Delete</button>
+            </td>
+            <td>view marks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+

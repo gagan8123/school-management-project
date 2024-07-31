@@ -1,0 +1,66 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* Google Font */
+    margin: 0;
+    padding: 20px;
+    background-color: white; /* Medium dark background color */
+    color: #ec2525; /* Text color */
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Google Font */
+    color: #011c56; /* Yellow color for headings */
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif; /* Google Font */
+    color: #0c0a22; /* Color for headings */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; /* Space between labels and inputs */
+    margin-bottom: 30px; /* Space below the student info section */
+}
+
+.info-input {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1em;
+    border: 3px solid #0c0a20 ;     /* Border for input fields */
+    border-radius: 13px;         /* Rounded corners for input fields */
+    box-shadow: 4 4 7px rgba(15, 15, 15, 0.2); /* Light shadow for input fields */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid #ffcc00; /* Yellow border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.3); /* Yellow shadow */
+    background-color: DimGrey; /* Medium dark gray background color for side headings */
+}
+
+th, td {
+    border: 2px solid #555; /* Dark gray border between cells */
+    text-align: center;
+    padding: 17px; /* Increased padding for better spacing */
+}
+
+th {
+    background-color: #6a6767; /* White background color for headers */
+    color: #000; /* Black text color for headers */
+    font-weight: bold;
+}
+
+/* td[contenteditable="true"] {
+    background-color: WhiteSmoke;  Dark gray background for editable cells 
+    color: #000;  Black text color for editable cells 
+    font-weight: bold;
+} */
+
+.overall-grade {
+    margin-top: 20px;
+    text-align: center;
+}

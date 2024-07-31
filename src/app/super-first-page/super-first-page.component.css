@@ -1,0 +1,118 @@
+
+
+
+
+.main-content {
+    padding: 20px;
+    width: 100%;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.header {
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1c40f;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    min-height: 150px;
+    
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), transparent 60%);
+    transition: transform 0.5s;
+    z-index: 0;
+}
+
+.card:hover::before {
+    transform: translate(50%, 50%);
+}
+
+.student-info {
+    background-color: #3498db;
+}
+
+.fee-billing {
+    background-color: #e74c3c;
+}
+
+.exams {
+    background-color: #f39c12;
+}
+
+.staff-info {
+    background-color: #2ecc71;
+}
+
+.library {
+    background-color: #9b59b6;
+}
+
+.transport {
+    background-color: #e67e22;
+}
+
+.attendance {
+    background-color: #1abc9c;
+}
+h1{
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 59px;
+}

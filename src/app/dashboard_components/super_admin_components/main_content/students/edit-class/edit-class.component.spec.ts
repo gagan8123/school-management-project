@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { EditClassComponent } from './edit-class.component';
+
+describe('EditClassComponent', () => {
+  let component: EditClassComponent;
+  let fixture: ComponentFixture<EditClassComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [EditClassComponent]
+    });
+    fixture = TestBed.createComponent(EditClassComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -1,0 +1,45 @@
+<div class="container mt-2">
+    <div class="card">
+        <div class="card-header bg-info">
+            <h1 class="text-center font-weight-bolder">{{Title}}</h1>
+        </div>
+        <div class="card-body">
+            
+                <div class="form-group" [hidden]="hide_reg" >
+                    <label for="name">Id</label>
+                    <input type="text" readonly name = "std_id"class="form-control" id="id" [(ngModel)]="id">
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name = "name"class="form-control" id="name" placeholder="Enter name" [(ngModel)]="name">
+                </div>
+                <div class="form-group">
+                    <label for="fathersName">Father's Name</label>
+                    <input type="text" name = "father_name"class="form-control" id="fathersName" placeholder="Enter father's name" [(ngModel)]="fathers_name">
+                </div>
+                <div class="form-group">
+                    <label for="mothersName">Mother's Name</label>
+                    <input type="text" name="mother_name"class="form-control" id="mothersName" placeholder="Enter mother's name" [(ngModel)]="mothers_name">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" class="form-control" id="address" placeholder="Enter address" [(ngModel)]="addres">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" name=""phone class="form-control" id="phoneNumber" placeholder="Enter phone number" [(ngModel)]="phone">
+                </div>
+                <div class="form-group">
+                    <label for="admissionDate">Admission Date</label>
+                    <input type="date" name="admin_date" class="form-control" id="admissionDate" [(ngModel)]="admission_dat">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" class="form-control" id="dob" [(ngModel)]="dob">
+                </div>
+                <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button>
+            
+        </div>
+    </div>
+</div>
