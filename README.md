@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Development server
 
 ```console
-git clone https://github.com/gagan8123/school-project/
+git clone https://github.com/gagan8123/school-management-project.git
 cd 'school-project'
 npm install 
 ng serve
